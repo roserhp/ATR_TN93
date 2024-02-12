@@ -1,7 +1,7 @@
 # ATR_TN93
 Code accompanying the paper "A novel algebraic approach to time-reversible evolutionary models" by Marta Casanellas, Roser Homs and Angélica Torres. Preprint available [here](https://arxiv.org/abs/2309.02276).
 
-This repository contains Macaulay2 and Julia files with the code to compute phylogenetic invariants for the Tamura-Nei evolutionary model. We provide a description of the contents of each file.
+This repository contains Macaulay2 and Julia files with the code to compute phylogenetic invariants for the Tamura-Nei 93 evolutionary model. We provide a description of the contents of each file.
 
 **MACAULAY2 files**
 - **Tripod.m2 :** Computation of the phylogenetic invariants for tripods under the TN93 model. These computations correspond to Lemma 5.1 in the manuscript.
@@ -14,4 +14,4 @@ This repository contains Macaulay2 and Julia files with the code to compute phyl
 
 **Text files**
 - **3leavesVanishingIdeal_FinalBasis.txt :** Printed list of results from the Tripod.m2 computations.
-- **4leaves_tensor_FinalBasis.txt** and **4leaves_tensor_id_FinalBasis.txt :** Printed lists of results from the Quartet.m2 computations.
+- **4leaves_tensor_FinalBasis.txt** and **4leaves_tensor_id_FinalBasis.txt :** Printed lists of results from the Quartet.m2 computations (the first one corresponds to the general tensor and the second one to assuming the identity matrix at the leaves).
