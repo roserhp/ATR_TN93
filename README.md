@@ -1,5 +1,5 @@
 # ATR_TN93
-Code accompanying the paper "A novel algebraic approach to time-reversible evolutionary models" by Marta Casanellas, Roser Homs and Angélica Torres
+Code accompanying the paper "A novel algebraic approach to time-reversible evolutionary models" by Marta Casanellas, Roser Homs and Angélica Torres. Preprint available [here](https://arxiv.org/abs/2309.02276).
 
 This repository contains Macaulay2 and Julia files with the code to compute phylogenetic invariants for the Tamura-Nei evolutionary model. We provide a description of the contents of each file.
 
