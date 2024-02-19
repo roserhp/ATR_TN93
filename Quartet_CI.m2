@@ -66,7 +66,16 @@ time codim CI1 --9
 time codim CI4 --9
   -- used 0.529536 seconds
 betti CItripod --18
+netList CItripod_*
 
+
+length support CItripod --34
+
+--Attempt to compute the join of the ideal of the two tripods
+needsPackage "SymbolicPowers"
+joinTripods=time joinIdeals(CI1,CI4);
+--heap violation
+apply(0..(numgens CI1-1),i->length terms CI1_i)
 ----------------------------------------
 --Egde invariants of quartets for 12|34
 ----------------------------------------
@@ -216,6 +225,8 @@ apply(rk0,i->f(i))
 edge=rk0|rk1|rk2|rk3
 CIedge=trim ideal edge;
 CI=CIedge+CItripod;
+"4leaves_BiologicalVanishingIdeal.txt" << toString CI << endl << close
+
 betti CI --68
 numgens CI  --18 
 numgens CIedge --50

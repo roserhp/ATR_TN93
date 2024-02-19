@@ -72,6 +72,8 @@ M3g=H*D3*(inverse H)
 
 --Change of basis in the tensor
 qbar=((transpose H)**(transpose H)**(transpose H))*qq
+"Tripod_qbar.txt" << toString qbar<< endl << close
+
 --From identity at the leaves to general case
 pbar=(D1**D2**D3)*qbar
 
